@@ -1,0 +1,132 @@
+/* 1- GENERAL STYLES
+   2- SECTIONS
+     2.0 NAV SECTION
+     2.1 SLIDE SECTION
+*/
+/* 1- GENERAL STYLES .............................................................................. 1- GENERAL STYLES */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'varela round' , sans-serif;
+    background-color: rgb(119, 119, 119) !important;
+    overflow-x: hidden;
+}
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+.section-parent{
+    padding: 40px;
+    height: 240px;
+}
+.div-link{
+    color: rgb(182, 182, 255);
+}
+.div-link:hover{
+    color: white;
+}
+.myicon {
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 17px;
+}
+/* 2.0 Nav Section .................................................................................. 2.0 Nav Section */
+.navbar, .dropdown-menu{
+    opacity: .8;
+}
+.navbar-brand{
+    transition: 0.4s;
+}
+.navbar-brand:hover{
+    text-shadow: 10px 10px 20px white,
+                -10px -10px 20px white;
+}
+.dropdown-menu a{
+    text-shadow: 1px 1px 0px rgb(213, 95, 243);
+}
+.dropdown-menu a:hover{
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+/* 2.1 Slide Section .............................................................................. 2.1 Slide Section */
+.carousel-inner h1{
+    text-shadow: 1px 1px #333;
+}
+.carousel-inner .carousel-caption {
+    background: rgba(200, 200, 200, 0.3);
+    border-radius: 7px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////// */
+.welcome-section h2{
+    font-size: 40px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////// */
+code {
+    font-size: 20px !important;
+}
+.btnbefo{
+    position: relative;
+    left: 30px;
+}
+.btnbefo::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style:solid;
+border-color: transparent transparent lightblue transparent;
+top: 20px;
+left: 13px;
+display: none;
+}
+.btnbefo::after{
+position: absolute;
+content: " ";
+height: 40px;
+width: 80px;
+background-color: lightblue;
+top: 40px;
+left: -15px;
+border-radius: 5px;
+display: none;
+}
+.btnbefo:active::before,
+.btn:hover::before{
+    display: block;
+
+}
+.btnbefo:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.btnbefo:active::after{
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////// */
+.back-pic1, .back-pic2{
+    background-attachment: fixed;
+    height: 240px;
+    background-size: cover;
+}
+.back-pic1{
+    background-image: url(../images/bk1.jpg);
+}
+.back-pic2{
+    background-image: url(../images/bk2.jpg);
+}
